@@ -29,7 +29,7 @@
                             {{ $user->second_name }}
                         </div>
 
-                        @if (!empty($user->contacts))
+                        @if ($user->contacts->count())
                         <div class="form-group">
                             <strong>Phones:</strong>
                             @foreach ($user->contacts as $phone)
